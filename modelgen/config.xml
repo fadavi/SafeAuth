@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration>
+  <jdbc>
+    <driver>org.sqlite.JDBC</driver>
+    <url>jdbc:sqlite:safeauth.db</url>
+    <user></user>
+    <password></password>
+    <properties></properties>
+  </jdbc>
+
+  <generator>
+    <database>
+      <name>org.jooq.util.sqlite.SQLiteDatabase</name>
+      <includes>.*</includes>
+      <excludes></excludes>
+      <inputSchema></inputSchema>
+      <customTypes></customTypes>
+      <forcedTypes></forcedTypes>
+    </database>
+
+    <generate></generate>
+
+    <target>
+      <packageName>net.fadavi.safeauth.data.gen</packageName>
+      <directory>../SafeAuth-ejb/src/java</directory>
+    </target>
+  </generator>
+</configuration>
